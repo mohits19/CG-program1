@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pixel Drawing</title>
+        <script type="text/javascript" src="drawstuff.js"></script>
+    </head>
+
+    <body onload="main();">
+        <div style="float:right">
+            <b>Viewport : </b>
+            Width= <input type="number" id="view-width" value=512 style="width: 60px">
+            Height= <input type="number" id="view-height" value=512 style="width: 60px">
+            <br><br>
+
+            <b>Eye : </b>
+            x= <input type="number" id="eye-x" value=0.5 style="width: 60px">
+            y= <input type="number" id="eye-y" value=0.5 style="width: 60px">
+            z= <input type="number" id="eye-z" value=-0.5 style="width: 60px">
+            <br><br>
+
+            <b>Up : </b>
+            x= <input type="number" id="up-x" value=0 style="width: 60px">
+            y= <input type="number" id="up-y" value=1 style="width: 60px">
+            z= <input type="number" id="up-z" value=0 style="width: 60px">
+            <br><br>
+
+            <b>LookAt : </b>
+            x= <input type="number" id="look-x" value=0 style="width: 60px">
+            y= <input type="number" id="look-y" value=0 style="width: 60px">
+            z= <input type="number" id="look-z" value=1 style="width: 60px">
+            <br><br>
+
+            <b>Light : </b>
+            x= <input type="number" id="light-x" value=-1 style="width: 60px">
+            y= <input type="number" id="light-y" value=3 style="width: 60px">
+            z= <input type="number" id="light-z" value=-0.5 style="width: 60px">
+            <br><br>
+
+            <button onclick="redraw()">ReDraw</button>
+        </div>
+
+        <canvas id="viewport" width="512" height="512"></canvas>
+    </body>
+</html>
